@@ -6,6 +6,10 @@ class Member(models.Model):
     phones = models.IntegerField(null=True)
     joined_date = models.DateField(null=True)
 
+    # Change the String Representation Function : __str__
+    # def __str__(self):
+    #     return f"{self.firstname} {self.lastname}"
+    
 
 
      
