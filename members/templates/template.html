@@ -1,8 +1,10 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="{% static 'myfirst.css' %}" />
   <body>
-    {% include "mymenu" with me="Harlem" sponsor=""W3SCHOOL %}
-    <h1>Welcome</h1>
-
-    <p>This is my webpage</p>
+    {% for x in fruits %}
+    <h1>{{ x }}</h1>
+    {% endfor %}
   </body>
 </html>
